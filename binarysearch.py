@@ -6,7 +6,9 @@ def binary_search(list, item):
     while low <= high:
 
         # The algorithm starts by directly going to the middle of the array
-        mid = (low + high) // 2
+        # mid = (high + low) // 2
+        # the formula below avoids overflow 
+        mid = low + ((high - low) // 2)
         guess = list[mid]
         if guess == item:
             return mid
@@ -21,7 +23,7 @@ def binary_search(list, item):
         else:
             low = mid + 1 
 
-    # Returns -1 if an item is not in the given indewx
+    # Returns -1 if an item is not in the given list
     return -1
 
 the_list = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 
