@@ -13,7 +13,7 @@ def findSmallest(arr):
     # We return the index of the smallest element
     return smallIndex
 
-# Selection Sort Array
+# Selection Sort Array (Runs on O(n^2))
 def selectionSort(arr):
     # Creating an array to store from least go greatest
     newArr = []
