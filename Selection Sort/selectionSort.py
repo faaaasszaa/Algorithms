@@ -1,6 +1,6 @@
 # Function to return the smallest index
 def findSmallest(arr):
-    # Starts the first index of the array
+    # Starts at the first index of the array
     smallest = arr[0]
     # Createing a variable to store the index of the smallest element
     smallIndex = 0
