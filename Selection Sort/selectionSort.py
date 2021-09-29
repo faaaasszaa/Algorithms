@@ -2,7 +2,7 @@
 def findSmallest(arr):
     # Starts at the first index of the array
     smallest = arr[0]
-    # Createing a variable to store the index of the smallest element
+    # Creating a variable to store the index of the smallest element
     smallIndex = 0
     # Loops through the array based on its length
     for i in range(1, len(arr)):
